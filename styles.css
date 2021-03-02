@@ -1,0 +1,166 @@
+/* global */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-width: 100vw;
+}
+
+.theme {
+  --one: #ffffff;
+  --two: #C5CCB7;
+  --three: #F6EDD9;
+  --four: #D1C8B5;
+  --five: #B0633B;
+  --six: #555555;
+}
+
+h2 {
+  font-family: 'Italiana', serif;
+  letter-spacing: .2rem;
+  color: var(--six);
+}
+
+h2 a {
+  font-family: 'Italiana', serif;
+  letter-spacing: .2rem;
+  color: var(--six);
+  text-decoration: none;
+}
+
+h2 a:hover {
+  font-family: 'Italiana', serif;
+  letter-spacing: .2rem;
+  color: var(--two);
+  text-decoration: none;
+}
+
+h2 a:after {
+  font-family: 'Italiana', serif;
+  letter-spacing: .2rem;
+  color: red;
+  text-decoration: none;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--six)
+}
+
+p {
+  color: var(--six);
+  font-family: 'Rokkitt', serif;
+  font-size: 1.25rem;
+}
+
+.header {
+  height: 5rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: auto;
+  background-color: var(--three);
+  color: var(--four);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline;
+  padding: 2rem;
+}
+
+nav {
+  align-self: flex-end;
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+  padding: 2rem;
+}
+
+li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+li a {
+  color: var(--four);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.section {
+  height: auto;
+  background-color: var(--one)
+}
+
+.flex-container {
+  justify-content: space-evenly;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--two);
+  padding: 1rem 3rem;
+  display: inline;
+  flex: 0 0 50%;
+  margin: 2rem 1rem;
+}
+
+.pic {
+  margin: 2rem 1rem;
+  height: auto;
+  display: inline;
+  flex: auto;
+  justify-content: flex-end;
+  background-image: url("IMG_7116.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.four {
+  background-color: var(--one);
+}
+
+.five {
+  background-color: var(--one);
+}
+
+.footer {
+  height: auto;
+  background-color: var(--three);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.social {
+  margin: 2rem 0 0 0;
+  display: inline;
+  color: var(--five);
+  align-content: space-between;
+  align-self: center;
+}
+
+.footer i {
+  padding: 0 1rem;
+  font-size: 2.5rem;
+}
+
+.footer p {
+  color: var(--five);
+  align-self: center;
+  font-family: 'Rokkitt', serif;
+}
