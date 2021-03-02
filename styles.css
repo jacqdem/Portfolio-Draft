@@ -1,4 +1,4 @@
-/* global */
+/* GLOBAL */
 body {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ body {
   --four: #D1C8B5;
   --five: #B0633B;
   --six: #555555;
-  --seven: #9A9280;
+  --seven: #9A9280; /* hover */
 }
 
 h1 {
@@ -54,7 +54,7 @@ h3, h4, h5, h6 {
 
 p {
   color: var(--six);
-  font-family: 'Rokkitt', serif;
+  font-family: 'Quicksand', serif;
   font-size: 1.25rem;
 }
 
@@ -70,6 +70,28 @@ p a:hover {
   font-family: 'Rokkitt', serif;
   font-size: 1.25rem;
 }
+
+.section {
+  height: auto;
+  background-color: transparent;
+  margin: 5rem 0;
+}
+
+.flex-container {
+  justify-content: space-evenly;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+hr {
+border: 1px solid var(--two);
+width: 70%;
+}
+
+/* HEADER */
 
 .header {
   height: 5rem;
@@ -123,110 +145,15 @@ li a {
   color: var(--four);
   text-decoration: none;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 li a:hover {
   color: var(--seven);
+  font-weight: bolder;
 }
 
-/* HOME PAGE */
-
-.section {
-  height: auto;
-  background-color: transparent;
-}
-
-.flex-container {
-  justify-content: space-evenly;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.box {
-  border-style: solid;
-  border-width: 3px;
-  border-color: var(--two);
-  padding: 1rem 3rem;
-  display: inline;
-  flex: 0 0 50%;
-  margin: 2rem 1rem;
-}
-
-.web-dev p {
-  display: inline;
-  padding: 5rem 0;
-}
-.web-dev h3 {
-  display: inline;
-  padding: 5rem 0;
-}
-
-.web-dev a {
-  font-family: 'Quicksand', sans-serif;
-  color: var(--six);
-  text-decoration: none;
-}
-
-.web-dev a:hover {
-  font-family: 'Quicksand', sans-serif;
-  color: var(--five);
-  text-decoration: none;
-}
-
-.collab {
-  padding: 2rem 0;
-}
-
-hr {
-border: 1px solid var(--two);
-width: 70%;
-}
-
-.about {
-  border-style: none;
-  border-width: 2px;
-  border-color: var(--two);
-  display: block;
-  flex: 100%;
-  padding: 5rem 3rem;
-  margin: 0 1rem;
-}
-
-.pic-1 {
-  margin: 2rem 1rem;
-  height: auto;
-  display: inline;
-  flex: auto;
-  justify-content: flex-end;
-  background-image: url("IMG_7116.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.pic-2 {
-  margin: 2rem 1rem;
-  height: auto;
-  display: inline;
-  flex: auto;
-  justify-content: flex-end;
-  background-image: url("IMG_7116.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.pic-3 {
-  margin: 2rem 1rem;
-  height: auto;
-  display: inline;
-  flex: auto;
-  justify-content: flex-end;
-  background-image: url("IMG_7116.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+/* FOOTER */
 
 .footer {
   height: auto;
@@ -267,10 +194,121 @@ width: 70%;
   font-family: 'Rokkitt', serif;
 }
 
+/* HOME PAGE */
+
+.box {
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--two);
+  padding: 1rem 3rem;
+  display: inline;
+  flex: 0 0 50%;
+  margin: 2rem 1rem;
+}
+
+.pic-1 {
+  margin: 2rem 1rem;
+  height: auto;
+  display: inline;
+  flex: auto;
+  justify-content: flex-end;
+  background-image: url("moodboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.ux p {
+  display: inline;
+
+}
+.ux h3 {
+  display: inline;
+
+}
+
+.ux a {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--six);
+  text-decoration: none;
+}
+
+.ux a:hover {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--five);
+  text-decoration: none;
+}
+
+.pic-2 {
+  margin: 2rem 1rem;
+  height: auto;
+  display: inline;
+  flex: auto;
+  justify-content: flex-end;
+  background-image: url("IMG_7116.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pic-3 {
+  margin: 2rem 1rem;
+  height: auto;
+  display: inline;
+  flex: auto;
+  justify-content: flex-end;
+  background-image: url("IMG_7116.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.web-dev {}
+
+.web-dev p {
+  display: inline;
+
+}
+.web-dev h3 {
+  display: inline;
+
+}
+
+.web-dev a {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--six);
+  text-decoration: none;
+}
+
+.web-dev a:hover {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--five);
+  text-decoration: none;
+}
+
+/* ABOUT PAGE */
+
+.about {
+  border-style: none;
+  border-width: 2px;
+  border-color: var(--two);
+  display: block;
+  flex: 100%;
+  padding: 3rem;
+  margin: 0 1rem;
+}
+
+.about p {
+  font-family: 'Quicksand';
+}
+
+.collab {
+  padding: 2rem 0;
+}
+
 /* GLASS HALF FULL PAGE */
 
 .wine {
-  background-image: url("spots-03.svg");
+  background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
