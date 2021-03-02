@@ -13,6 +13,11 @@ body {
   --four: #D1C8B5;
   --five: #B0633B;
   --six: #555555;
+  --seven: #9A9280;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 h2 {
@@ -35,7 +40,7 @@ h2 a:hover {
   text-decoration: none;
 }
 
-h2 a:after {
+h2 a::after {
   font-family: 'Italiana', serif;
   letter-spacing: .2rem;
   color: red;
@@ -49,6 +54,19 @@ h3, h4, h5, h6 {
 
 p {
   color: var(--six);
+  font-family: 'Rokkitt', serif;
+  font-size: 1.25rem;
+}
+
+p a {
+  color: var(--six);
+  font-family: 'Rokkitt', serif;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+p a:hover {
+  color: var(--five);
   font-family: 'Rokkitt', serif;
   font-size: 1.25rem;
 }
@@ -69,7 +87,20 @@ p {
 
 .logo {
   display: inline;
-  padding: 2rem;
+  padding: 0.3rem 2rem;
+}
+
+h1 a {
+  color: var(--four);
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: var(--seven);
+}
+
+.logo:hover {
+  color: var(--seven);
 }
 
 nav {
@@ -91,12 +122,18 @@ li {
 li a {
   color: var(--four);
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
+
+li a:hover {
+  color: var(--seven);
+}
+
+/* HOME PAGE */
 
 .section {
   height: auto;
-  background-color: var(--one)
+  background-color: transparent;
 }
 
 .flex-container {
@@ -110,7 +147,7 @@ li a {
 
 .box {
   border-style: solid;
-  border-width: 2px;
+  border-width: 3px;
   border-color: var(--two);
   padding: 1rem 3rem;
   display: inline;
@@ -118,7 +155,47 @@ li a {
   margin: 2rem 1rem;
 }
 
-.pic {
+.web-dev p {
+  display: inline;
+  padding: 5rem 0;
+}
+.web-dev h3 {
+  display: inline;
+  padding: 5rem 0;
+}
+
+.web-dev a {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--six);
+  text-decoration: none;
+}
+
+.web-dev a:hover {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--five);
+  text-decoration: none;
+}
+
+.collab {
+  padding: 2rem 0;
+}
+
+hr {
+border: 1px solid var(--two);
+width: 70%;
+}
+
+.about {
+  border-style: none;
+  border-width: 2px;
+  border-color: var(--two);
+  display: block;
+  flex: 100%;
+  padding: 5rem 3rem;
+  margin: 0 1rem;
+}
+
+.pic-1 {
   margin: 2rem 1rem;
   height: auto;
   display: inline;
@@ -129,12 +206,26 @@ li a {
   background-size: cover;
 }
 
-.four {
-  background-color: var(--one);
+.pic-2 {
+  margin: 2rem 1rem;
+  height: auto;
+  display: inline;
+  flex: auto;
+  justify-content: flex-end;
+  background-image: url("IMG_7116.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.five {
-  background-color: var(--one);
+.pic-3 {
+  margin: 2rem 1rem;
+  height: auto;
+  display: inline;
+  flex: auto;
+  justify-content: flex-end;
+  background-image: url("IMG_7116.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer {
@@ -142,7 +233,7 @@ li a {
   background-color: var(--three);
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -152,15 +243,40 @@ li a {
   color: var(--five);
   align-content: space-between;
   align-self: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer i {
   padding: 0 1rem;
   font-size: 2.5rem;
+    color: var(--four);
+}
+
+.footer i:hover {
+  padding: 0 1rem;
+  font-size: 2.5rem;
+    color: var(--seven);
 }
 
 .footer p {
-  color: var(--five);
+  color: var(--four);
   align-self: center;
   font-family: 'Rokkitt', serif;
+}
+
+/* GLASS HALF FULL PAGE */
+
+.wine {
+  background-image: url("spots-03.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.intro {
+  justify-content: center;
+  text-align: center;
 }
