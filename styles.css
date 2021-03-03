@@ -109,6 +109,7 @@ width: 70%;
   z-index: 30;
 }
 
+
 .logo {
   display: inline;
   padding: 0.3rem 2rem;
@@ -273,7 +274,6 @@ li a:hover {
 }
 .web-dev h3 {
   display: inline;
-
 }
 
 .web-dev a {
@@ -322,7 +322,7 @@ li a:hover {
 }
 
 .collab {
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .skills {
@@ -343,6 +343,7 @@ li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 1rem 1rem var(--four);
 }
 
 .tools {
