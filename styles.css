@@ -60,30 +60,31 @@ p {
 
 p a {
   color: var(--six);
-  font-family: 'Rokkitt', serif;
+  font-family: 'Quicksand', serif;
   font-size: 1.25rem;
   text-decoration: none;
 }
 
 p a:hover {
   color: var(--five);
-  font-family: 'Rokkitt', serif;
+  font-family: 'Quicksand', serif;
   font-size: 1.25rem;
+}
+
+.flex-container {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+    justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .section {
   height: auto;
   background-color: transparent;
-  margin: 5rem 0;
-}
-
-.flex-container {
-  justify-content: space-evenly;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  margin: 3rem 0;
+  padding: 3rem;
 }
 
 hr {
@@ -105,6 +106,7 @@ width: 70%;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  z-index: 30;
 }
 
 .logo {
@@ -218,24 +220,20 @@ li a:hover {
   background-position: center;
 }
 
-
-.ux p {
-  display: inline;
-
-}
-.ux h3 {
-  display: inline;
-
+.pic-1:hover {
+  transform: scale(1.05);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 }
 
 .ux a {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Italiana', sans-serif;
   color: var(--six);
   text-decoration: none;
 }
 
 .ux a:hover {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Italiana', sans-serif;
   color: var(--five);
   text-decoration: none;
 }
@@ -246,7 +244,7 @@ li a:hover {
   display: inline;
   flex: auto;
   justify-content: flex-end;
-  background-image: url("IMG_7116.jpg");
+  background-image: url("moodboard.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -257,7 +255,7 @@ li a:hover {
   display: inline;
   flex: auto;
   justify-content: flex-end;
-  background-image: url("IMG_7116.jpg");
+  background-image: url("moodboard.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -291,18 +289,77 @@ li a:hover {
   border-style: none;
   border-width: 2px;
   border-color: var(--two);
-  display: block;
-  flex: 100%;
-  padding: 3rem;
-  margin: 0 1rem;
+  padding: 2rem;
+  margin: 2rem;
+  justify-content: space-between;
+}
+
+.artist {
+  padding: 0;
+  margin: 0;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.artist h3 {
+  margin: 0;
+}
+
+.artist p {
+  margin: 0;
 }
 
 .about p {
   font-family: 'Quicksand';
+  line-height: 1.5;
 }
 
 .collab {
   padding: 2rem 0;
+}
+
+.skills {
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.character {
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
+}
+
+.self-portrait {
+  width: 35vw;
+  background-image: url("4.21.2018-42.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.self-portrait:hover {
+  transform: scale(1.05);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.tools {
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.tool {
+  padding: 0 3rem;
+}
+
+.learning h3 {
+  display: inline;
+}
+.learning p {
+  display: inline;
 }
 
 /* GLASS HALF FULL PAGE */
