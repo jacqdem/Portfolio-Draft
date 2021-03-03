@@ -183,13 +183,13 @@ li a:hover {
 }
 
 .footer i {
-  padding: 1rem;
+  padding: 2rem;
   font-size: 2rem;
     color: var(--six);
 }
 
 .footer i:hover {
-  padding: 1rem;
+  padding: 2rem;
   font-size: 2rem;
     color: var(--seven);
 }
@@ -198,7 +198,7 @@ li a:hover {
   color: var(--six);
   font-family: 'Quicksand', serif;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 /* HOME PAGE */
@@ -294,8 +294,8 @@ li a:hover {
   border-style: none;
   border-width: 2px;
   border-color: var(--two);
-  padding: 2rem;
-  margin: 2rem;
+  padding: 3rem 2rem;
+  margin: 3rem 2rem;
   justify-content: space-between;
 }
 
@@ -322,7 +322,7 @@ li a:hover {
 }
 
 .collab {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .skills {
