@@ -193,7 +193,7 @@ li a:hover {
 .footer p {
   color: var(--four);
   align-self: center;
-  font-family: 'Rokkitt', serif;
+  font-family: 'Quicksand', serif;
 }
 
 /* HOME PAGE */
@@ -338,12 +338,6 @@ li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.self-portrait:hover {
-  transform: scale(1.05);
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
 }
 
 .tools {
