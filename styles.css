@@ -159,41 +159,46 @@ li a:hover {
 
 .footer {
   height: auto;
-  background-color: var(--three);
+  background-color: var(--one);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  margin: 2rem;
 }
 
 .social {
-  margin: 2rem 0 0 0;
   display: inline;
-  color: var(--five);
   align-content: space-between;
-  align-self: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: auto;
+}
+
+.social p {
+  color: var(--six);
+  font-family: 'Quicksand', serif;
+  font-size: 1rem;
 }
 
 .footer i {
-  padding: 0 1rem;
-  font-size: 2.5rem;
-    color: var(--four);
+  padding: 1rem;
+  font-size: 2rem;
+    color: var(--six);
 }
 
 .footer i:hover {
-  padding: 0 1rem;
-  font-size: 2.5rem;
+  padding: 1rem;
+  font-size: 2rem;
     color: var(--seven);
 }
 
 .footer p {
-  color: var(--four);
-  align-self: center;
+  color: var(--six);
   font-family: 'Quicksand', serif;
+  font-size: 1rem;
+  padding: 1rem;
 }
 
 /* HOME PAGE */
@@ -368,4 +373,5 @@ li a:hover {
 .intro {
   justify-content: center;
   text-align: center;
+  align-self: center;
 }
