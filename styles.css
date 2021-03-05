@@ -36,7 +36,7 @@ h2 a {
 h2 a:hover {
   font-family: 'Italiana', serif;
   letter-spacing: .2rem;
-  color: var(--two);
+  color: var(--seven);
   text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ p a {
 }
 
 p a:hover {
-  color: var(--five);
+  color: var(--seven);
   font-family: 'Quicksand', serif;
   font-size: 1.25rem;
 }
@@ -83,12 +83,12 @@ p a:hover {
 .section {
   height: auto;
   background-color: transparent;
-  margin: 3rem 0;
+  margin: 0;
   padding: 3rem;
 }
 
 hr {
-border: 1px solid var(--two);
+border: 1px solid var(--seven);
 width: 70%;
 }
 
@@ -205,13 +205,18 @@ li a:hover {
 /* HOME PAGE */
 
 .box {
-  border-style: solid;
+  border-style: none;
   border-width: 3px;
-  border-color: var(--two);
-  padding: 1rem 3rem;
+  border-color: var(--four);
+  padding: 1rem;
   display: inline;
-  flex: 0 0 50%;
+  flex: 0 0 55%;
   margin: 2rem 1rem;
+  border-radius: 5px;
+}
+
+.box:hover {
+  box-shadow: 0px 0px var(--three);
 }
 
 .pic-1 {
@@ -224,11 +229,12 @@ li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
 }
 
 .pic-1:hover {
-  transform: scale(1.05);
-  transition-duration: 300ms;
+  transform: scale(1.03);
+  transition-duration: 500ms;
   transition-timing-function: ease-in-out;
 }
 
@@ -250,9 +256,16 @@ li a:hover {
   display: inline;
   flex: auto;
   justify-content: flex-end;
-  background-image: url("moodboard.png");
+  background-image: url("segno.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 5px;
+}
+
+.pic-2:hover {
+  transform: scale(1.03);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
 .pic-3 {
@@ -261,9 +274,20 @@ li a:hover {
   display: inline;
   flex: auto;
   justify-content: flex-end;
-  background-image: url("moodboard.png");
+  background-image: url("traqua.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 5px;
+}
+
+.pic-3:hover {
+  transform: scale(1.03);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+.ux-2 {
+text-align: right;
 }
 
 .web-dev {}
@@ -284,7 +308,7 @@ li a:hover {
 
 .web-dev a:hover {
   font-family: 'Quicksand', sans-serif;
-  color: var(--five);
+  color: var(--seven);
   text-decoration: none;
 }
 
@@ -293,7 +317,7 @@ li a:hover {
 .about {
   border-style: none;
   border-width: 2px;
-  border-color: var(--two);
+  border-color: var(--four);
   padding: 3rem 2rem;
   margin: 3rem 2rem;
   justify-content: space-between;
