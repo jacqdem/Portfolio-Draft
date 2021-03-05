@@ -9,8 +9,8 @@ body {
 .theme {
   --one: #ffffff;
   --two: #C5CCB7;
-  --three: #F6EDD9;
-  --four: #D1C8B5;
+  --three: #;
+  --four: #40473d;
   --five: #B0633B;
   --six: #555555;
   --seven: #9A9280; /* hover */
@@ -118,6 +118,7 @@ width: 70%;
 h1 a {
   color: var(--four);
   text-decoration: none;
+  letter-spacing: 10px;
 }
 
 h1 a:hover {
