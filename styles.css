@@ -100,7 +100,7 @@ width: 70%;
   position: sticky;
   top: 0;
   align-self: auto;
-  background-color: var(--three);
+  background-color: transparent;
   color: var(--four);
   display: flex;
   flex-direction: row;
