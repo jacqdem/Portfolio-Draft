@@ -1,4 +1,7 @@
 /* GLOBAL */
+/* For mobile phones: */
+
+
 body {
   margin: 0;
   padding: 0;
@@ -16,8 +19,13 @@ body {
   --seven: #9A9280; /* hover */
 }
 
+.content {
+  padding: 5rem;
+}
+
 h1 {
   font-size: 3rem;
+  font-family: serif;
 }
 
 h2 {
@@ -71,20 +79,11 @@ p a:hover {
   font-size: 1.25rem;
 }
 
-.flex-container {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-    justify-content: space-evenly;
-  justify-content: space-between;
-}
-
 .section {
   height: auto;
   background-color: transparent;
   margin: 0;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 
 hr {
@@ -96,29 +95,27 @@ width: 70%;
 
 .header {
   height: 5rem;
+  margin: 0;
+  padding: 0 5rem;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  align-self: auto;
   background-color: transparent;
   color: var(--four);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
   z-index: 30;
 }
 
-
 .logo {
   display: inline;
-  padding: 0.3rem 2rem;
+  padding: 1.5rem 2rem;
+  text-align: left;
 }
 
 h1 a {
   color: var(--four);
   text-decoration: none;
   letter-spacing: 10px;
+  font-weight: bolder;
 }
 
 h1 a:hover {
@@ -129,32 +126,26 @@ h1 a:hover {
   color: var(--seven);
 }
 
-nav {
-  align-self: flex-end;
-  float: right;
-}
-
 ul {
   list-style-type: none;
-  display: inline;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 
 li {
   display: inline;
-  padding: 0 1rem;
 }
 
 li a {
   color: var(--four);
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: bolder;
+  font-family: serif;
 }
 
 li a:hover {
   color: var(--seven);
-  font-weight: bolder;
+  font-family: serif;
 }
 
 /* FOOTER */
@@ -162,46 +153,41 @@ li a:hover {
 .footer {
   height: auto;
   background-color: var(--one);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 2rem;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0 0 3rem 0;
 }
 
 .social {
-  display: inline;
-  align-content: space-between;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: auto;
+  padding: 1rem 0;
 }
 
-.social p {
+.copyright {
+  padding: 1rem 0;
+}
+
+.copyright p {
+  display: inline;
+  text-align: center;
   color: var(--six);
   font-family: 'Quicksand', serif;
   font-size: 1rem;
+  padding: 2rem;
 }
 
 .footer i {
-  padding: 2rem;
+  padding: 1rem;
   font-size: 2rem;
     color: var(--six);
+
 }
 
 .footer i:hover {
-  padding: 2rem;
+  padding: 1rem;
   font-size: 2rem;
     color: var(--seven);
 }
 
-.footer p {
-  color: var(--six);
-  font-family: 'Quicksand', serif;
-  font-size: 1rem;
-  padding: 2rem;
-}
 
 /* HOME PAGE */
 
@@ -211,7 +197,6 @@ li a:hover {
   border-color: var(--four);
   padding: 1rem;
   display: inline;
-  flex: 0 0 55%;
   margin: 2rem 1rem;
   border-radius: 5px;
 }
@@ -222,7 +207,7 @@ li a:hover {
 
 .pic-1 {
   margin: 2rem 1rem;
-  height: auto;
+  height: 5rem;
   display: inline;
   flex: auto;
   justify-content: flex-end;
@@ -287,10 +272,6 @@ li a:hover {
   transition-timing-function: ease-in-out;
 }
 
-.ux-2 {
-text-align: right;
-}
-
 .web-dev {}
 
 .web-dev p {
@@ -319,18 +300,14 @@ text-align: right;
   border-style: none;
   border-width: 2px;
   border-color: var(--four);
-  padding: 3rem 2rem;
-  margin: 3rem 2rem;
-  justify-content: space-between;
+  padding: 0 2rem;
+  margin: 0 2rem;
 }
 
 .artist {
   padding: 0;
   margin: 0;
-  width: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: auto;
 }
 
 .artist h3 {
@@ -363,11 +340,8 @@ text-align: right;
 }
 
 .self-portrait {
-  width: 35vw;
-  background-image: url("4.21.2018-42.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto;
+  max-width: 100%;
   box-shadow: 1rem 1rem var(--four);
 }
 
