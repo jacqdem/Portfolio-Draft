@@ -20,7 +20,7 @@ body {
 }
 
 .content {
-  padding: 5rem;
+  padding: 5rem 0;
 }
 
 h1 {
@@ -96,7 +96,7 @@ width: 70%;
 .header {
   height: 5rem;
   margin: 0;
-  padding: 0 5rem;
+  padding: 0;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -193,7 +193,7 @@ li a:hover {
 
 .projects {
   height: auto;
-  padding: 5rem 1rem;
+  padding: 5rem 0;
 }
 
 .project-pic {
@@ -223,7 +223,7 @@ li a:hover {
 
 
 
-.pic:hover {
+.project-pic:hover {
   transform: scale(1.03);
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
@@ -254,7 +254,7 @@ li a:hover {
 /* ABOUT PAGE */
 
 .about {
-  padding: 5rem 1rem;
+  padding: 5rem 0;
 }
 
 
@@ -278,7 +278,7 @@ li a:hover {
 
 .self-portrait {
   height: auto;
-  vertical-align: middle;
+  display: inline;
 }
 
 .collab {
