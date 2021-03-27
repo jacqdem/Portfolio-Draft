@@ -429,3 +429,17 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.blog-post {
+  width: 80vw;
+  margin: auto;
+}
+
+.blog-pic {
+  width: auto;
+  padding: 0 0 3rem 0;
+}
+
+p a {
+  text-decoration: none;
+}
