@@ -221,34 +221,7 @@ img {
   opacity: 0.7;
 }
 
-.card-img-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
 
-.project:hover .card-img-overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 
 .pic-1 {
 
@@ -379,6 +352,45 @@ img {
 }
 
 
+.card {
+  position: relative;
+  display: inline-block;
+  transition: all .5s ease-in;
+  border-radius: 0;
+  border-style: none;
+  border-color: transparent;
+
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: .5s ease;
+  background-color: #ffffff66;
+}
+
+.overlay__text {
+  color: var(--four);
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
 
 
 
@@ -389,6 +401,8 @@ img {
 
 
 
+
+@media only screen and (min-width: 768px) {
 .card {
   position: relative;
   display: inline-block;
@@ -432,6 +446,7 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
 }
 
 .blog-post {
