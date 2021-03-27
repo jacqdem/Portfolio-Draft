@@ -25,7 +25,7 @@ body {
 
 .content {
   padding: 5rem 1rem !important;
-  margin: 0;
+  margin: 2rem 0;
 }
 
 h1 {
@@ -310,9 +310,7 @@ img {
 
 /* ABOUT PAGE */
 
-.about {
-  padding: 0;
-}
+
 
 
 .about p {
@@ -333,10 +331,16 @@ img {
   align-self: flex-end;
 }
 
+.artist {
+  height: auto;
+  display: inline;
+  padding: ;
+}
+
 .self-portrait {
   height: auto;
   display: inline;
-  padding: 2rem 0;
+  padding:  0;
 }
 
 .collab {
@@ -415,7 +419,7 @@ img {
 }
 
 .card:hover .card__overlay {
-  opacity: 0.8;
+  opacity: 1;
 }
 
 .overlay__text {
