@@ -24,12 +24,12 @@ body {
 }
 
 .content {
-  padding: 2rem 0;
+  padding: 2rem 0 !important;
   margin: 0;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4vw;
   font-family: serif;
 }
 
@@ -100,26 +100,28 @@ width: 70%;
 
 .header {
   height: 5rem;
-  margin: 0;
-  padding: 0;
+  margin: 0 3rem;
+  padding: 2rem 0;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: transparent;
   color: var(--four);
   z-index: 30;
+  align-items: center;
 }
 
 .logo {
-  display: inline;
-  padding: 1.5rem 2rem;
+  display: inline-block;
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 h1 a {
   color: var(--four);
   text-decoration: none;
-  letter-spacing: 10px;
+  letter-spacing: .2rem;
   font-weight: bolder;
 }
 
@@ -131,9 +133,12 @@ h1 a:hover {
   color: var(--seven);
 }
 
+nav {
+    display: inline-block;
+}
+
 ul {
   list-style-type: none;
-  padding: 2rem 0;
 }
 
 li {
@@ -143,7 +148,7 @@ li {
 li a {
   color: var(--four);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 2vw;
   font-weight: bolder;
   font-family: serif;
 }
@@ -208,7 +213,7 @@ padding: ;
 
 .project-pic {
   display: block;
-  height: 20rem;
+  height: 15rem;
   width: 100%;
 }
 
