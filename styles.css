@@ -314,6 +314,7 @@ img {
   height: auto;
   display: inline;
   padding:  0;
+  border-radius: 50%;
 }
 
 .collab {
