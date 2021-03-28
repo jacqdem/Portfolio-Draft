@@ -211,11 +211,7 @@ padding: ;
   padding: ;
 }
 
-.project-pic {
-  display: block;
-  height: 15rem;
-  width: 100%;
-}
+
 
 img {
   opacity: 0.7;
@@ -313,7 +309,7 @@ img {
 .self-portrait {
   height: auto;
   display: inline;
-  padding:  0;
+  padding: 2rem 0;
   border-radius: 50%;
 }
 
@@ -398,7 +394,13 @@ img {
 
 
 
+.project-description {
+  font-size: 1rem;
+}
 
+.project-title {
+  font-size: 2rem;
+}
 
 
 
@@ -449,6 +451,19 @@ img {
   text-align: center;
 }
 }
+
+a {
+  color: var(--four);
+  text-decoration: none;
+}
+
+a p:hover {
+  color: var(--seven) !important;
+  text-decoration: none;
+}
+
+
+
 
 .blog-post {
   width: 80vw;
