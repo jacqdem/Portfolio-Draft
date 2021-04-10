@@ -69,27 +69,28 @@ h2 a::after {
 }
 
 h3, h4, h5, h6 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: var(--six)
 }
 
 p {
   color: var(--six);
-  font-family: 'Quicksand', serif;
-  font-size: 1.25rem;
+  font-family: 'Raleway', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 p a {
   color: var(--six);
-  font-family: 'Quicksand', serif;
-  font-size: 1.25rem;
+  font-family: 'Raleway', serif;
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
 p a:hover {
   color: var(--seven);
-  font-family: 'Quicksand', serif;
-  font-size: 1.25rem;
+  font-family: 'Raleway', serif;
+  font-size: 1.2rem;
 }
 
 .section {
@@ -202,20 +203,20 @@ li a:hover {
   display: inline;
   text-align: center;
   color: var(--six);
-  font-family: 'Quicksand', serif;
+  font-family: 'Raleway', serif;
   font-size: 1rem;
-  padding: 2rem;
+  padding: 0 0 2rem 0;
 }
 
 .footer i {
-  padding: 1rem;
+  padding: 0 1rem;
   font-size: 1.5rem;
     color: var(--six);
 
 }
 
 .footer i:hover {
-  padding: 1rem;
+  padding: 0 1rem;
   font-size: 1.5rem;
     color: var(--seven);
 }
@@ -257,17 +258,6 @@ img {
 }
 
 
-.ux a {
-  font-family: 'Italiana', sans-serif;
-  color: var(--six);
-  text-decoration: none;
-}
-
-.ux a:hover {
-  font-family: 'Italiana', sans-serif;
-  color: var(--five);
-  text-decoration: none;
-}
 
 
 
@@ -277,37 +267,14 @@ img {
   transition-timing-function: ease-in-out;
 }
 
-.web-dev {}
 
-.web-dev p {
-  display: inline;
-
-}
-.web-dev h3 {
-  display: inline;
-}
-
-.web-dev a {
-  font-family: 'Quicksand', sans-serif;
-  color: var(--six);
-  text-decoration: none;
-}
-
-.web-dev a:hover {
-  font-family: 'Quicksand', sans-serif;
-  color: var(--seven);
-  text-decoration: none;
-}
 
 /* ABOUT PAGE */
 
 
 
 
-.about p {
-  font-family: 'Quicksand';
-  line-height: 1.5;
-}
+
 
 
 .skills {
@@ -339,21 +306,6 @@ img {
   padding: 3rem 0;
 }
 
-.tools {
-  padding: 2rem;
-  margin: 2rem;
-}
-
-.tool {
-  padding: 0 3rem;
-}
-
-.learning h3 {
-  display: inline;
-}
-.learning p {
-  display: inline;
-}
 
 /* GLASS HALF FULL PAGE */
 
@@ -424,7 +376,7 @@ padding: 1rem 1rem 0 1rem;}
 }
 
 .project-title {
-  font-size: 
+  font-size:
 }
 
 
@@ -547,8 +499,4 @@ a p:hover {
 .blog-pic {
   width: auto;
   padding: 0 0 3rem 0;
-}
-
-p a {
-  text-decoration: none;
 }
