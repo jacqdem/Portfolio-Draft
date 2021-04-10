@@ -96,6 +96,10 @@ border: 1px solid var(--seven);
 width: 70%;
 }
 
+
+.line-2 {
+  line-height: 1.5;
+}
 /* HEADER */
 
 .header {
