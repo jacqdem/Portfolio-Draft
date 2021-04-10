@@ -29,37 +29,38 @@ body {
 }
 
 .content {
-  padding: 5rem 1rem !important;
+  padding: 5rem 1rem;
   margin: 2rem 0;
 }
 
 h1 {
   font-size: 3vw;
-  font-family: serif;
+  font-family: "Josefin Slab";
+
 }
 
 h2 {
-  font-family: 'Italiana', serif;
+  font-family: 'Playfair Display', serif;
   letter-spacing: .2rem;
   color: var(--six);
 }
 
 h2 a {
-  font-family: 'Italiana', serif;
+  font-family: 'Playfair Display', serif;
   letter-spacing: .2rem;
   color: var(--six);
   text-decoration: none;
 }
 
 h2 a:hover {
-  font-family: 'Italiana', serif;
+  font-family: 'Playfair Display', serif;
   letter-spacing: .2rem;
   color: var(--seven);
   text-decoration: none;
 }
 
 h2 a::after {
-  font-family: 'Italiana', serif;
+  font-family: 'Playfair Display', serif;
   letter-spacing: .2rem;
   color: red;
   text-decoration: none;
@@ -108,9 +109,6 @@ width: 70%;
 }
 /* HEADER */
 
-.grid-item {
-  width: 30vw;
-}
 
 
 .header {
@@ -131,6 +129,7 @@ width: 70%;
   text-align: left;
   padding: 0;
   margin: 0;
+
 }
 
 h1 a {
@@ -138,10 +137,14 @@ h1 a {
   text-decoration: none;
   letter-spacing: .2rem;
   font-weight: bolder;
+  font-family: "Josefin Slab";
+  font-size: 3.5vw;
 }
 
 h1 a:hover {
   color: var(--seven);
+  font-family: "Josefin Slab";
+  font-size: 3.5vw;
 }
 
 .logo:hover {
@@ -163,14 +166,15 @@ li {
 li a {
   color: var(--four);
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 2.2vw;
   font-weight: bolder;
-  font-family: serif;
+  font-family: "Josefin Slab";
 }
 
 li a:hover {
   color: var(--seven);
   font-family: serif;
+  font-family: "Josefin Slab";
 }
 
 /* FOOTER */
@@ -372,6 +376,7 @@ img {
   border-style: none;
   border-color: transparent;
 
+
 }
 
 .card__image {
@@ -451,7 +456,7 @@ img {
 }
 
 .card:hover .card__overlay {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .overlay__text {
