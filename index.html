@@ -20,7 +20,64 @@
 </head>
 
 <body class="theme">
-  <div class="header row">
+  <div class="header row d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
+    <div class="logo col-8">
+      <h1><a href="index.html">jacqueline demaio</a></h1>
+    </div>
+
+    <!--    MOBILE NAV    -->
+
+    <!--    Made by Erik Terwan    -->
+    <!--   24th of November 2015   -->
+    <!--        MIT License        -->
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>About</li>
+          </a>
+          <a href="#">
+            <li>Info</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+          <a href="https://erikterwan.com/" target="_blank">
+            <li>Show me more</li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+
+  <div class="header row d-none d-md-block d-lg-block d-xl-block">
     <div class="logo col-8">
       <h1><a href="index.html">jacqueline demaio</a></h1>
     </div>
@@ -40,7 +97,9 @@
             <img src="images/aperol.jpg" class="card__image">
             <div class="card__overlay">
               <div class="overlay__text">
-                <a href="bologna-diaries.html" rel="noopener noreferrer"><p> <span class="project-title">bologna diaries</a>
+                <a href="bologna-diaries.html" rel="noopener noreferrer">
+                  <p> <span class="project-title">bologna diaries</span><em class="description"></em></p>
+                </a>
               </div>
             </div>
           </div>
@@ -54,8 +113,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <!--
+
+          <!--
         <div class="project col-md animate__animated animate__fadeIn animate__slower">
           <div class="card">
             <img src="images/parco.jpg" class="card__image">
@@ -78,21 +137,21 @@
         </div>
 -->
 
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <div class="row">
-      <div class="social">
-        <a href="https://www.linkedin.com/in/jacqueline-demaio/" target="_blank" rel="noopener noreferrer"><i class="col-md bi bi-linkedin"></i></a>
-        <a href="https://github.com/jacqdem" target="_blank" rel="noopener noreferrer"><i class="col-md bi bi-github"></i></a>
-        <a href="https://instagram.com/jacqdemaio" target="_blank" rel="noopener noreferrer"><i class="col-md bi bi-instagram"></i></a>
+    <div class="footer">
+      <div class="row">
+        <div class="social">
+          <a href="https://www.linkedin.com/in/jacqueline-demaio/" target="_blank" rel="noopener noreferrer"><i class="col-md bi bi-linkedin"></i></a>
+          <a href="https://github.com/jacqdem" target="_blank" rel="noopener noreferrer"><i class="col-md bi bi-github"></i></a>
+          <a href="https://instagram.com/jacqdemaio" target="_blank" rel="noopener noreferrer"><i class="col-md bi bi-instagram"></i></a>
+        </div>
+        <div class="copyright">
+          <p>© Jacqueline DeMaio 2021</p>
+        </div>
       </div>
-      <div class="copyright">
-        <p>© Jacqueline DeMaio 2021</p>
-      </div>
-    </div>
 
 </body>
 
