@@ -367,8 +367,12 @@ background-color: #ffffff;
 padding: 1rem 1rem 0 1rem;}
 
 
-
-
+.title {
+  line-height: 1.5;
+}
+.date {
+  font-size: 1rem;
+}
 
 
 .project-description {
@@ -458,7 +462,7 @@ padding: 1rem 1rem 0 1rem;}
   opacity: 0;
   visibility: none;
   transition: .5s ease;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .card:hover .card__overlay {
@@ -475,7 +479,7 @@ padding: 1rem 1rem 0 1rem;}
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #ffffff;
 }
 }
 
@@ -490,7 +494,9 @@ a p:hover {
 }
 
 
-
+.blog {
+  height: rem;
+}
 
 .blog-post {
   width: 80vw;
