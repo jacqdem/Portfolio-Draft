@@ -1,7 +1,5 @@
 /* GLOBAL */
 /* For mobile phones: */
-
-
 body {
   margin: 0;
   padding: 0;
@@ -11,14 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-
-}
-
-.square {
-  height: 10rem;
-}
-
 .theme {
   --one: #ffffff;
   --two: #C5CCB7;
@@ -26,7 +16,8 @@ body {
   --four: #40473d;
   --five: #B0633B;
   --six: #555555;
-  --seven: #9A9280; /* hover */
+  --seven: #9A9280;
+  /* hover */
 }
 
 .content {
@@ -34,11 +25,11 @@ body {
   margin: 2rem 0;
 }
 
+/* FONT SIZE */
 h1 {
   color: var(--four);
   font-size: 3rem;
   font-family: "Josefin Slab";
-
 }
 
 h2 {
@@ -87,12 +78,21 @@ p a {
   text-decoration: none;
 }
 
+.card-text p a {
+  color: white;
+  font-family: 'Raleway', serif;
+  font-size: 2rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
 p a:hover {
   color: var(--seven);
   font-family: 'Raleway', serif;
   font-size: 1.2rem;
 }
 
+/*  */
 .section {
   height: auto;
   background-color: transparent;
@@ -101,19 +101,16 @@ p a:hover {
 }
 
 hr {
-border: 1px solid var(--seven);
-width: 70%;
+  border: 1px solid var(--seven);
+  width: 70%;
 }
-
 
 .line-2 {
   line-height: 1.5;
   text-align: center;
 }
+
 /* HEADER */
-
-
-
 .header {
   height: 7vh;
   margin: 0 4vw;
@@ -155,7 +152,7 @@ h1 a:hover {
 }
 
 nav {
-    display: inline-block;
+  display: inline-block;
 }
 
 ul {
@@ -182,7 +179,6 @@ li a:hover {
 }
 
 /* FOOTER */
-
 .footer {
   height: auto;
   background-color: var(--one);
@@ -211,55 +207,27 @@ li a:hover {
 .footer i {
   padding: 0 1rem;
   font-size: 1.5rem;
-    color: var(--six);
-
+  color: var(--six);
 }
 
 .footer i:hover {
   padding: 0 1rem;
   font-size: 1.5rem;
-    color: var(--seven);
+  color: var(--seven);
 }
 
-
-/* HOME PAGE */
-
+/* HOME */
 .project {
   position: relative;
-padding: ;
 }
 
 .projects {
   height: auto;
-  padding: ;
 }
-
-
 
 img {
   opacity: 1;
 }
-
-
-
-.pic-1 {
-
-}
-
-.pic-2 {
-
-}
-
-
-.box {
-  border-color: var(--four);
-  display: inline;
-  border-radius: 5px;
-}
-
-
-
-
 
 .project-pic:hover {
   transform: scale(1.03);
@@ -267,16 +235,7 @@ img {
   transition-timing-function: ease-in-out;
 }
 
-
-
 /* ABOUT PAGE */
-
-
-
-
-
-
-
 .skills {
   margin: 0;
   padding: 0;
@@ -298,22 +257,12 @@ img {
 .self-portrait {
   height: auto;
   display: inline;
-  padding: 2rem 0;
+  padding: em 0;
   border-radius: 50%;
 }
 
 .collab {
   padding: 3rem 0;
-}
-
-
-/* GLASS HALF FULL PAGE */
-
-.wine {
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
 }
 
 .intro {
@@ -322,7 +271,6 @@ img {
   align-self: center;
 }
 
-
 .card {
   position: relative;
   display: inline-block;
@@ -330,13 +278,15 @@ img {
   border-radius: 0;
   border-style: none;
   border-color: transparent;
-
-
 }
 
 .card__image {
   width: 100%;
   height: auto;
+}
+
+.card:hover .card__overlay {
+  opacity: .2;
 }
 
 .card__overlay {
@@ -347,15 +297,24 @@ img {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: none;
   transition: .5s ease;
-background-color: rgba(255, 255, 255, 0.8); 
+  background-color: white;
+}
+
+.card-text {
+position: absolute;
+top: 50%;
+left: 50%;
+-webkit-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+text-align: center;
+padding: 1rem 1rem 0 1rem;
 }
 
 .overlay__text {
-  color: var(--four);
-  font-size: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -363,17 +322,24 @@ background-color: rgba(255, 255, 255, 0.8);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-background-color: #ffffff;
-padding: 1rem 1rem 0 1rem;}
+  padding: 1rem 1rem 0 1rem;
+}
 
+.overlay__text p a {
+  color: white;
+  font-family: 'Raleway', serif;
+  font-size: 2rem;
+  font-weight: 100;
+  text-decoration: none;
+}
 
 .title {
   line-height: 1.5;
 }
+
 .date {
   font-size: 1rem;
 }
-
 
 .project-description {
   font-size: 1rem;
@@ -383,11 +349,11 @@ padding: 1rem 1rem 0 1rem;}
   font-size:
 }
 
-
-
+.color-block {
+  height: 5rem;
+}
 
 @media only screen and (min-width: 768px) {
-
   .header {
     height: 7vh;
     margin: 0 4vw;
@@ -404,86 +370,39 @@ padding: 1rem 1rem 0 1rem;}
   h1 {
     color: var(--four);
     font-size: 3vw;
-    font-family: "Josefin Slab";}
+    font-family: "Josefin Slab";
+  }
 
-    h1 a {
-      color: var(--four);
-      text-decoration: none;
-      letter-spacing: .2rem;
-      font-weight: bolder;
-      font-family: "Josefin Slab";
-      font-size: 3vw;
-    }
+  h1 a {
+    color: var(--four);
+    text-decoration: none;
+    letter-spacing: .2rem;
+    font-weight: bolder;
+    font-family: "Josefin Slab";
+    font-size: 3vw;
+  }
 
-    h1 a:hover {
-      color: var(--seven);
-      font-family: "Josefin Slab";
-      font-size: 3vw;
-    }
+  h1 a:hover {
+    color: var(--seven);
+    font-family: "Josefin Slab";
+    font-size: 3vw;
+  }
 
-    li a {
-      color: var(--four);
-      text-decoration: none;
-      font-size: 2vw;
-      font-weight: bolder;
-      font-family: "Josefin Slab";
-      padding: 0 1rem;
-    }
+  li a {
+    color: var(--four);
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: bolder;
+    font-family: "Josefin Slab";
+    padding: 0 1rem;
+  }
 
-    li a:hover {
-      color: var(--seven);
-      font-family: serif;
-      font-family: "Josefin Slab";
-    }
-
-
-.card {
-  position: relative;
-  display: inline-block;
-  transition: all .5s ease-in;
-  border-radius: 0;
-  border-style: none;
-  border-color: transparent;
+  li a:hover {
+    color: var(--seven);
+    font-family: serif;
+    font-family: "Josefin Slab";
+  }
 }
-
-.card__image {
-  width: 100%;
-  height: auto;
-}
-
-.card__overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  visibility: none;
-  transition: .5s ease;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.card:hover .card__overlay {
-  opacity: 1;
-}
-
-.overlay__text {
-  color: var(--four);
-  font-size: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background-color: #ffffff;
-}
-}
-
-
 
 a {
   color: var(--four);
@@ -493,19 +412,4 @@ a {
 a p:hover {
   color: var(--seven) !important;
   text-decoration: none;
-}
-
-
-.blog {
-  height: rem;
-}
-
-.blog-post {
-  width: 80vw;
-  margin: auto;
-}
-
-.blog-pic {
-  width: auto;
-  padding: 0 0 3rem 0;
 }
