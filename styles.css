@@ -102,7 +102,7 @@ p a:hover {
 
 hr {
   border: 1px solid var(--seven);
-  width: 70%;
+  margin: auto;
 }
 
 .line-2 {
@@ -412,4 +412,8 @@ a {
 a p:hover {
   color: var(--seven) !important;
   text-decoration: none;
+}
+
+.community {
+  text-align: center;
 }
