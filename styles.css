@@ -427,4 +427,9 @@ a p:hover {
 
 .community {
   text-align: center;
+  border-style: none;
+  border-color: var(--seven);
+  border-width: 1pt;
+  padding: 2rem;
+
 }
