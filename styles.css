@@ -12,11 +12,11 @@ body {
 .theme {
   --one: #ffffff;
   --two: #C5CCB7;
-  --three: #;
+  --three: #9A9280;
   --four: #40473d;
   --five: #B0633B;
   --six: #555555;
-  --seven: #9A9280;
+  --seven: #707597;
   /* hover */
 }
 
@@ -415,6 +415,10 @@ padding: 1rem 1rem 0 1rem;
   }
 }
 
+h4 a:hover {
+  color: var(--seven)
+}
+
 a {
   color: var(--four);
   text-decoration: none;
@@ -432,4 +436,14 @@ a p:hover {
   border-width: 1pt;
   padding: 2rem;
 
+}
+
+.clients {
+  text-align: center;
+}
+
+.giant {
+  font-size: 3rem;
+  color: var(--six);
+  font-weight: lighter;
 }
