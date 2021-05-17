@@ -447,3 +447,9 @@ a p:hover {
   color: var(--six);
   font-weight: lighter;
 }
+
+
+.page-heading {
+  width: 80vw;
+  margin: auto;
+}
