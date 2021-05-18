@@ -246,6 +246,12 @@ img {
   transition-timing-function: ease-in-out;
 }
 
+
+.writing {
+  width: 70vw;
+  margin: 3rem auto;
+}
+
 /* ABOUT PAGE */
 
 
@@ -355,6 +361,11 @@ padding: 1rem 1rem 0 1rem;
 
   .about {
     width: 60vw;
+  }
+
+  .writing {
+    width: 60vw;
+    margin: 3rem auto;
   }
 
   .header {
