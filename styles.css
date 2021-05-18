@@ -71,21 +71,21 @@ h2 a::after {
 }
 
 h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: var(--six)
 }
 
 p {
   color: var(--six);
-  font-family: 'Raleway', serif;
-  font-size: 1.2rem;
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 p a {
   color: var(--six);
-  font-family: 'Raleway', serif;
-  font-size: 1.2rem;
+  font-family: 'Crimson Pro', serif;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -247,29 +247,11 @@ img {
 }
 
 /* ABOUT PAGE */
-.skills {
-  margin: 0;
-  padding: 0;
-  align-self: flex-start;
-}
 
-.character {
-  margin: 0;
-  padding: 0;
-  align-self: flex-end;
-}
 
-.artist {
-  height: auto;
-  display: inline;
-  padding: ;
-}
-
-.self-portrait {
-  height: auto;
-  display: inline;
-  padding: em 0;
-  border-radius: 50%;
+.about {
+  align-self: center;
+  width: 70vw;
 }
 
 .collab {
@@ -365,6 +347,16 @@ padding: 1rem 1rem 0 1rem;
 }
 
 @media only screen and (min-width: 768px) {
+
+  .content {
+    padding: 5rem 1rem;
+    margin: 2rem 0;
+  }
+
+  .about {
+    width: 60vw;
+  }
+
   .header {
     height: 7vh;
     margin: 0 4vw;
@@ -415,6 +407,9 @@ padding: 1rem 1rem 0 1rem;
   }
 }
 
+
+
+
 h4 a:hover {
   color: var(--seven)
 }
@@ -447,7 +442,6 @@ a p:hover {
   color: var(--six);
   font-weight: lighter;
 }
-
 
 .page-heading {
   width: 80vw;
