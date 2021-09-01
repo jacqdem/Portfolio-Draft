@@ -19,6 +19,8 @@ body {
   --five: #B0633B;
   --six: #555555;
   --seven: #707597;
+  --eight: #859463;
+  --nine: #525C3D;
   /* hover */
 }
 
@@ -304,7 +306,7 @@ video {
 }
 
 .card:hover .card__overlay {
-  opacity: .2;
+  opacity: .3;
 }
 
 .card__overlay {
@@ -318,7 +320,7 @@ video {
   opacity: 0;
   visibility: none;
   transition: .5s ease;
-  background-color: white;
+  background-color: black;
 }
 
 .card-text {
