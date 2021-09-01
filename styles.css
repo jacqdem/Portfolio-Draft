@@ -18,7 +18,7 @@ body {
   --four: #40473d;
   --five: #B0633B;
   --six: #555555;
-  --seven: #707597;
+  --seven: #9A9280;
   --eight: #859463;
   --nine: #525C3D;
   /* hover */
@@ -49,7 +49,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Crimson Pro', serif;
   letter-spacing: .2rem;
   color: var(--six);
 }
@@ -186,14 +186,14 @@ li a {
   text-decoration: none;
   font-size: 1rem;
   font-weight: bolder;
-  font-family: "Josefin Slab";
+  font-family: "Josefin Sans";
   padding: 0 1rem;
 }
 
 li a:hover {
   color: var(--seven);
   font-family: serif;
-  font-family: "Josefin Slab";
+  font-family: "Josefin Sans";
 }
 
 /* FOOTER */
@@ -320,7 +320,7 @@ video {
   opacity: 0;
   visibility: none;
   transition: .5s ease;
-  background-color: black;
+  background-color: var(--six);
 }
 
 .card-text {
@@ -371,6 +371,12 @@ padding: 1rem 1rem 0 1rem;
 
 .color-block {
   height: 5rem;
+}
+
+
+.blog-post {
+  max-width: 100vw
+margin: auto;
 }
 
 /* DESKTOP */
@@ -443,6 +449,18 @@ padding: 1rem 1rem 0 1rem;
     font-family: serif;
     font-family: "Josefin Sans";
   }
+
+  .blog-post {
+    max-width: 70vw
+  }
+
+  .photog {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.photog {
+  margin-bottom: 1.5rem;
 }
 
 h4 a:hover {
