@@ -83,14 +83,14 @@ h3, h4, h5, h6 {
 p {
   color: var(--six);
   font-family: 'Crimson Pro', serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
 p a {
   color: var(--six);
   font-family: 'Crimson Pro', serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 
@@ -320,7 +320,7 @@ video {
   opacity: 0;
   visibility: none;
   transition: .5s ease;
-  background-color: var(--six);
+  background-color: var(--four);
 }
 
 .card-text {
@@ -334,7 +334,7 @@ text-align: center;
 padding: 1rem 1rem 0 1rem;
 }
 
-.overlay__text {
+.overlay__text p {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -343,14 +343,21 @@ padding: 1rem 1rem 0 1rem;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 1rem 1rem 0 1rem;
+  color: white;
+  font-family: 'Josefin Sans', serif;
+  font-size: 1rem;
+  font-weight: 200;
+  text-decoration: none;
+  opacity: 1;
 }
 
 .overlay__text p a {
   color: white;
   font-family: 'Raleway', serif;
-  font-size: 2rem;
-  font-weight: 100;
+  font-size: 1rem;
+  font-weight: 200;
   text-decoration: none;
+  opacity: 1;
 }
 
 .title {
@@ -379,6 +386,12 @@ padding: 1rem 1rem 0 1rem;
 margin: auto;
 }
 
+.current-page {
+  font-weight: bolder;
+  background-color: rgba(154, 146, 128, 0.35);
+
+}
+
 /* DESKTOP */
 
 @media only screen and (min-width: 768px) {
@@ -394,7 +407,7 @@ margin: auto;
   }
 
   .about {
-    width: 60vw;
+    width: 40vw;
   }
 
   .writing {
