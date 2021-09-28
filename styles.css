@@ -106,7 +106,7 @@ p a {
 p a:hover {
   color: var(--seven);
   font-family: 'Josefin Sans', serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 /*  */
@@ -503,6 +503,7 @@ a {
 a p:hover {
   color: var(--seven) !important;
   text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .community {
