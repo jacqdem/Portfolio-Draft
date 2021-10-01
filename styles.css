@@ -85,6 +85,10 @@ h5 a:hover {
 color: var(--seven);
 }
 
+h3 a:hover {
+  color: var(--seven);
+}
+
 p {
   color: var(--six);
   font-family: 'Josefin Sans', serif;
