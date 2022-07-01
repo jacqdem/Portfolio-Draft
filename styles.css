@@ -126,10 +126,12 @@ p a:hover {
   padding: 3rem 0;
 }
 
-hr {
-  border: 1px solid var(--seven);
-  margin: auto;
-}
+  hr {
+    border: .5px solid var(--three);
+    opacity: 1;
+    margin: 1rem auto;
+    width: 20%;
+  }
 
 .line-2 {
   line-height: 1.5;
